@@ -1,9 +1,10 @@
-package com.namjackson.arch.sample
+package com.namjackson.arch.sample.view.ui
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.namjackson.arch.sample.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,10 +26,11 @@ class MainActivity : AppCompatActivity() {
         }
         false
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val navView: com.google.android.material.bottomnavigation.BottomNavigationView = findViewById(R.id.nav_view)
+        val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
         textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
