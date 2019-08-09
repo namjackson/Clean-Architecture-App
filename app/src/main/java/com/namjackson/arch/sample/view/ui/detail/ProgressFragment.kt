@@ -1,33 +1,24 @@
 package com.namjackson.arch.sample.view.ui.detail
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-
+import androidx.lifecycle.ViewModelProviders
 import com.namjackson.arch.sample.R
+import com.namjackson.arch.sample.databinding.ProgressFragmentBinding
+import com.namjackson.arch.sample.view.base.BaseFragment
 
-class ProgressFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = ProgressFragment()
-    }
+class ProgressFragment :
+    BaseFragment<ProgressFragmentBinding>(R.layout.progress_fragment) {
 
     private lateinit var viewModel: ProgressViewModel
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.progress_fragment, container, false)
-    }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(ProgressViewModel::class.java)
         // TODO: Use the ViewModel
+    }
+
+    companion object {
+        fun newInstance() = ProgressFragment()
     }
 
 }

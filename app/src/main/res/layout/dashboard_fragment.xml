@@ -5,12 +5,12 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".view.ui.home.HomeListFragment">
+            tools:context=".view.ui.home.DashboardFragment">
 
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Home List"/>
+                android:text="Dashboard"/>
 
     </FrameLayout>
 </layout>

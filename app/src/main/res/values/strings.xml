@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Clean-Architecture-App</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    <string name="fragment_home_list">Home List</string>
+    <string name="fragment_dashboard">Dashboard</string>
+    <string name="fragment_mypage">MyPage</string>
+    <string name="fragment_detail">Detail</string>
+    <string name="fragment_progress">Progress</string>
+
 </resources>

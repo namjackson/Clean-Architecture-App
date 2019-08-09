@@ -1,4 +1,4 @@
-package com.namjackson.arch.sample.view.ui
+package com.namjackson.arch.sample.view.ui.home
 
 import androidx.lifecycle.ViewModel;
 
